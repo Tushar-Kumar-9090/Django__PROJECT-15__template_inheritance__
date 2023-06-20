@@ -1,0 +1,36 @@
+<!-- # inherit all the property by using jinja extends tag -->
+{% extends 'mdb_5.html' %}
+
+
+<!-- # here we block title tag from parent -->
+{% block title%}
+    <title>CHILD CLASS</title>
+{% endblock %}
+
+
+
+<!-- # among 6 lines i dont want to show 3lines -->
+{% block body_block %}
+
+    <h3>Hii Good Morning</h3>
+
+    <h3>Hii Good Afternoon</h3>
+
+    <h3>Hii Good evening</h3>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% block title%}
+    <title>PARENT CLASS</title>
+{% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <style>
+        h3{
+            margin-bottom: 20px;
+        }
+
+        button{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<center>
+
+    
+        <h3>Parent class</h3>
+        <button type="button" class="btn btn-primary">Primary</button>
+    
+
+    <h3>this is Django class</h3>
+
+    <h3>i am learning Django</h3>
+    
+    <h3>Hello World</h3>
+
+    <h3>Hii Good Morning</h3>
+
+    <h3>Hii Good Afternoon</h3>
+
+    <h3>Hii Good evening</h3>
+
+    <h3>Hii Good night</h3>
+
+    
+    {% block body_block %}
+    {% endblock %}
+
+</center>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
